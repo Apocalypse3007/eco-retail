@@ -1,5 +1,5 @@
 {
-  "name": "my-turborepo",
+  "name": "eco-retail",
   "private": true,
   "scripts": {
     "build": "turbo run build",
