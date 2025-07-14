@@ -6,7 +6,7 @@ const Gamification: React.FC = () => {
       <h2 className="text-xl font-semibold mb-2">Gamification & Rewards</h2>
       <div className="bg-blue-50 dark:bg-blue-900 text-blue-900 dark:text-blue-100 rounded-lg p-4 border border-blue-200 dark:border-blue-800 shadow-sm flex items-center gap-2">
         <span className="text-2xl">💡</span>
-        <span>Swap "Eco-Friendly Detergent" for "Plant-Based Detergent" to reduce carbon by <b>25%</b>!</span>
+        <span>Swap "Samsung 34(86.42cm) Odyssey G5 Curved Gaming Monitor" for suggested product to reduce carbon by <b>25%</b>!</span>
       </div>
       <div className="flex flex-col gap-2 mt-2">
         <span className="font-medium">Your Rewards</span>

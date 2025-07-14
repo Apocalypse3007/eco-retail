@@ -26,16 +26,24 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body suppressHydrationWarning={true} className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground`}>
+      <body suppressHydrationWarning={true} className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white text-zinc-900`}>
         <CartProvider>
-          <nav className="w-full flex justify-between items-center px-6 py-4 bg-zinc-950/80 border-b border-zinc-800 mb-8">
-            <Link href="/" className="text-xl font-bold text-white">Eco Retail</Link>
-            <div className="flex gap-4">
-              <Link href="/marketplace">
-                <button className="px-4 py-2 rounded bg-green-600 text-white hover:bg-green-700 transition shadow">Marketplace</button>
+          {/* Walmart-style header */}
+          <header className="w-full bg-blue-700 text-white flex flex-col">
+            <div className="flex items-center justify-between px-6 py-3">
+              <Link href="/" className="flex items-center gap-2 text-2xl font-bold">
+                <span className="bg-white text-blue-700 rounded-full px-2 py-1 font-black">E</span>co Retail
               </Link>
+              <div className="flex-1 mx-8">
+                <input type="text" placeholder="Search everything at Eco Retail..." className="w-full px-4 py-2 rounded-full text-white" />
+              </div>
+              <div className="flex gap-6 items-center">
+                <Link href="/marketplace" className="hover:underline">Marketplace</Link>
+                <Link href="/checkout" className="hover:underline">Cart</Link>
+                <Link href="#" className="hover:underline">Account</Link>
+              </div>
             </div>
-          </nav>
+          </header>
           {children}
         </CartProvider>
       </body>

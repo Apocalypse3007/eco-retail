@@ -10,7 +10,7 @@ interface SmartSuggestionsProps {
 const SmartSuggestions: React.FC<SmartSuggestionsProps> = ({ suggestions, onSwap }) => {
   return (
     <div className="flex flex-col gap-4">
-      <h2 className="text-xl font-semibold mb-2">Greener Alternatives</h2>
+      <h2 className="text-xl font-semibold mb-2">More Sustainable Alternatives</h2>
       <ul className="flex flex-col gap-3">
         {suggestions.map((alt, idx) => (
           <li

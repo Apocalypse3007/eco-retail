@@ -7,6 +7,8 @@ export interface Product {
   water: number;
   waste: number;
   score: number;
+  price: number;
+  image: string;
 }
 
 interface SustainabilityFeedbackProps {
@@ -29,9 +31,9 @@ const SustainabilityFeedback: React.FC<SustainabilityFeedbackProps> = ({ product
       <div className="flex flex-col gap-2">
         <span className="text-lg font-medium">{p.name}</span>
         <div className="flex gap-4 text-sm">
-          <span className="flex items-center gap-1">🌱 CO₂: <b>{p.co2}kg</b></span>
-          <span className="flex items-center gap-1">💧 Water: <b>{p.water}L</b></span>
-          <span className="flex items-center gap-1">🧴 Waste: <b>{p.waste}kg</b></span>
+          <span className="flex items-center gap-1"> CO₂: <b>{p.co2}kg</b></span>
+          <span className="flex items-center gap-1"> Water: <b>{p.water}L</b></span>
+          <span className="flex items-center gap-1"> Waste: <b>{p.waste}kg</b></span>
         </div>
         <div className="mt-2">
           <div className="flex justify-between text-xs mb-1">
